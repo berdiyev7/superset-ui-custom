@@ -22,8 +22,8 @@ import { Grid, GridItem } from './Layout';
 import { ROW_HEIGHT } from '../plugin/utils';
 
 type HeadersOfHeaderProps<R extends string, C extends string> = {
-  rows: R[];
-  columns: C[];
+   rows: R[];
+   columns: C[];
 };
 
 const EmptyItem = styled(GridItem)`
@@ -31,20 +31,20 @@ const EmptyItem = styled(GridItem)`
 `;
 
 const HeadersOfHeader: FC<HeadersOfHeaderProps<string, string>> = ({ rows, columns }) => (
-  <Grid
-    withoutOverflow
-    gridColumn={`span ${rows.length || 1}`}
-    gridTemplateColumns="1fr"
-    gridTemplateRows={`repeat(${columns.length || 1}, max-content)`}
-  >
-    <EmptyItem header bgLevel={5} />
-    {columns.map(column => (
-      // eslint-disable-next-line react/jsx-key
-      <GridItem bgLevel={5} bordered justifyContent="flex-start" header>
-        <div>{column}</div>
-      </GridItem>
-    ))}
-  </Grid>
+   <Grid
+      withoutOverflow
+      gridColumn={`span ${rows.length || 1}`}
+      gridTemplateColumns="1fr"
+      gridTemplateRows={`repeat(${columns.length || 1}, max-content)`}
+   >
+      <EmptyItem header bgLevel={5} />
+      {columns.map(column => (
+         // eslint-disable-next-line react/jsx-key
+         <GridItem bgLevel={5} bordered justifyContent="flex-start" header>
+            <div>{column}</div>
+         </GridItem>
+      ))}
+   </Grid>
 );
 
 export default HeadersOfHeader;

@@ -22,36 +22,36 @@ import { Grid, GridItem } from './Layout';
 import { ROW_HEIGHT } from '../plugin/utils';
 
 export type TotalColumnProps = {
-  columns: string[];
-  rowsTotal: string[];
-  rowsFillData: boolean[];
-  total: string;
-  compactView: boolean;
-  showTotalAll: boolean;
+   columns: string[];
+   rowsTotal: string[];
+   rowsFillData: boolean[];
+   total: string;
+   compactView: boolean;
+   showTotalAll: boolean;
 };
 
 const TotalColumn: FC<TotalColumnProps> = ({ columns, rowsFillData, rowsTotal, total, showTotalAll, compactView }) => (
-  <Grid
-    gridTemplateColumns="max-content"
-    gridTemplateRows={`repeat(${columns.length + (compactView ? 1 : 2)}, ${ROW_HEIGHT}px) ${rowsFillData
-      .map(fillData => `${fillData ? ROW_HEIGHT : 0}px`)
-      .join(' ')}`}
-  >
-    <GridItem header bgLevel={5} gridRow={`span ${columns.length + (compactView ? 1 : 2)}`} justifyContent="flex-end">
-      <div>{t('Total')}</div>
-    </GridItem>
-    {rowsTotal.map((rowTotal, index) => (
-      // eslint-disable-next-line react/jsx-key
-      <GridItem hidden={!rowsFillData[index]} justifyContent="flex-end">
-        <div>{rowTotal}</div>
+   <Grid
+      gridTemplateColumns="max-content"
+      gridTemplateRows={`repeat(${columns.length + (compactView ? 1 : 2)}, ${ROW_HEIGHT}px) ${rowsFillData
+         .map(fillData => `${fillData ? ROW_HEIGHT : 0}px`)
+         .join(' ')}`}
+   >
+      <GridItem header bgLevel={5} gridRow={`span ${columns.length + (compactView ? 1 : 2)}`} justifyContent="flex-end">
+         <div>{t('Total')}</div>
       </GridItem>
-    ))}
-    {showTotalAll && (
-      <GridItem justifyContent="flex-end">
-        <div>{total}</div>
-      </GridItem>
-    )}
-  </Grid>
+      {rowsTotal.map((rowTotal, index) => (
+         // eslint-disable-next-line react/jsx-key
+         <GridItem hidden={!rowsFillData[index]} justifyContent="flex-end">
+            <div>{rowTotal}</div>
+         </GridItem>
+      ))}
+      {showTotalAll && (
+         <GridItem justifyContent="flex-end">
+            <div>{total}</div>
+         </GridItem>
+      )}
+   </Grid>
 );
 
 export default TotalColumn;

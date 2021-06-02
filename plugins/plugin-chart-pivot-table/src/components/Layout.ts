@@ -19,13 +19,13 @@
 import { styled, supersetTheme } from '@superset-ui/core';
 
 export const Grid = styled.div<{
-  bordered?: boolean;
-  withoutOverflow?: boolean;
-  gridColumn?: string;
-  gridAutoFlow?: string;
-  gridAutoRows?: string;
-  gridTemplateRows?: string;
-  gridTemplateColumns?: string;
+   bordered?: boolean;
+   withoutOverflow?: boolean;
+   gridColumn?: string;
+   gridAutoFlow?: string;
+   gridAutoRows?: string;
+   gridTemplateRows?: string;
+   gridTemplateColumns?: string;
 }>`
   ${({ bordered, theme }) => bordered && `border-top: 1px solid ${theme.colors.grayscale.light2};`}
   ${({ withoutOverflow }) => withoutOverflow && 'overflow: hidden;'}
@@ -50,26 +50,26 @@ export const FillItem = styled.div<{ hidden?: boolean; justifyContent?: JustifyC
   justify-content: ${({ justifyContent }) => justifyContent || 'center'};
 `;
 
-export const GridItem = styled(FillItem)<{
-  bgLevel?: number;
-  header?: boolean;
-  hidden?: boolean;
-  bordered?: boolean;
-  gridColumn?: string;
-  gridRow?: string;
+export const GridItem = styled(FillItem) <{
+   bgLevel?: number;
+   header?: boolean;
+   hidden?: boolean;
+   bordered?: boolean;
+   gridColumn?: string;
+   gridRow?: string;
 }>`
   overflow: hidden;
   ${({ bgLevel, theme }) =>
-    bgLevel &&
-    `background-color: ${theme.colors.grayscale[`light${bgLevel}` as keyof typeof supersetTheme.colors.grayscale]};`}
+      bgLevel &&
+      `background-color: ${theme.colors.grayscale[`light${bgLevel}` as keyof typeof supersetTheme.colors.grayscale]};`}
   ${({ header }) => header && 'font-weight: bolder;'}
   ${({ bordered, theme }) => bordered && `border-top: 1px solid ${theme.colors.grayscale.light2};`}
   ${({ gridColumn }) => gridColumn && `grid-column: ${gridColumn};`}
   ${({ gridRow }) => gridRow && `grid-row: ${gridRow};`}
 `;
 
-export const InvisibleGridItem = styled(GridItem)<{
-  invisible?: boolean;
+export const InvisibleGridItem = styled(GridItem) <{
+   invisible?: boolean;
 }>`
   ${({ invisible }) => invisible && 'visibility: hidden;'};
 `;
