@@ -26,7 +26,7 @@
       "ci:release-from-tag": "yarn lerna publish --no-verify-access --yes",
       "ci:release-conventional": "yarn clean-npm-lock && lerna publish --conventional-commits --create-release github --no-git-tag-version --no-push"
    },
-   "repository": "https://github.com/berdiyev7/superset-ui-custom",
+   "repository": "git+https://github.com/berdiyev7/superset-ui-custom.git",
    "devDependencies": {
       "@babel/cli": "^7.10.4",
       "@babel/core": "7.7.4",
@@ -131,5 +131,9 @@
    "dependencies": {
       "@superset-ui/chart-controls": "0.16.9",
       "@superset-ui/core": "0.16.7"
-   }
+   },
+   "bugs": {
+      "url": "https://github.com/berdiyev7/superset-ui-custom/issues"
+   },
+   "license": "MIT"
 }

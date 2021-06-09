@@ -1,6 +1,6 @@
 {
-  "name": "@superset-viz-plugins/plugin-chart-pivot-table",
-  "version": "0.11.1",
+  "name": "@superset-ui-plugins/plugin-chart-pivot-table",
+  "version": "0.12.0",
   "description": "Superset Chart - Pivot Table",
   "pluginName": "PivotTableChartPlugin",
   "sideEffects": false,
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:nielsen-oss/superset-viz-plugins.git"
+    "url": "git+https://github.com/berdiyev7/superset-ui-plugins.git"
   },
   "keywords": [
     "superset"
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/nielsen-oss/superset-viz-plugins/iissues"
+    "url": "https://github.com/berdiyev7/superset-ui-plugins/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -41,5 +41,10 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "homepage": "https://github.com/berdiyev7/superset-ui-plugins#readme",
+  "directories": {
+    "test": "test"
+  },
+  "author": ""
 }
