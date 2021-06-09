@@ -1,4 +1,4 @@
-# superset-ui-custom-plugins
+# superset-ui-plugins
 ![release-workflow](https://github.com/nielsen-oss/superset-viz-plugins/workflows/release-workflow/badge.svg)
 
 ### Project Overview
