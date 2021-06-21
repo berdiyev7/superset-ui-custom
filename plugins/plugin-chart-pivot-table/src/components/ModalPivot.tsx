@@ -83,7 +83,6 @@ const ButtonSubmit = styled.button`
 `;
 
 
-
 const Modal = ({
    visible = false,
    title = '',

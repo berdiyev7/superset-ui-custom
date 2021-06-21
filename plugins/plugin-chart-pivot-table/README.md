@@ -1,6 +1,6 @@
 ## @superset-ui-plugins/plugin-chart-table-pivot
 
-<!--[![Version](https://img.shields.io/npm/v/@superset-viz-plugins/plugin-chart-table-pivot.svg?style=flat-square)](https://img.shields.io/npm/v/@superset-viz-plugins/plugin-chart-table-pivot-new.svg?style=flat-square)-->
+[![Version](https://img.shields.io/npm/v/@superset-ui-plugins/plugin-chart-table-pivot.svg?style=flat-square)](https://img.shields.io/npm/v/@superset-ui-plugins/plugin-chart-table-pivot-new.svg?style=flat-square)
 
 This plugin provides Table Pivot New for Superset.
 
