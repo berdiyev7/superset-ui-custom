@@ -24,8 +24,8 @@ This repository is using a monorepo strategy which lets us have one source of tr
 
 ### Storybook examples (uses Chromatic)
 
-- [Stories view](https://master--5fec4c81935a8c002151e85f.chromatic.com)
-- [Library view](https://chromatic.com/library?appId=5fec4c81935a8c002151e85f&branch=master)
+- [Stories view](https://master--60d060bb2987070039615441.chromatic.com)
+- [Library view](https://chromatic.com/library?appId=60d060bb2987070039615441&branch=master)
 
 ### Plugins in repository
 
